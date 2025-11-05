@@ -1,0 +1,133 @@
+{
+  "title": "The Wandering Owl and the Midnight Map",
+  "start": "arrival",
+  "scenes": [
+    {
+      "id": "arrival",
+      "text": "A pale owl drops a wax-sealed envelope at your window. Inside: an invitation to a midnight lecture at the mysterious Academy of Moonlight. Do you go?",
+      "choices": [
+        { "label": "Slip out now and follow the owl", "target": "follow_owl" },
+        { "label": "Ignore it — it's probably a prank", "target": "ignore" },
+        { "label": "Open the window and call out to the owl", "target": "call_owl" }
+      ]
+    },
+    {
+      "id": "follow_owl",
+      "text": "You trail the owl through foggy lanes to a cobbled square where an archway appears out of mist. A faint glow pulses behind the arch.",
+      "choices": [
+        { "label": "Step through the arch into the glow", "target": "arch" },
+        { "label": "Wait and watch the arch", "target": "watch_arch" },
+        { "label": "Run back home — this is getting too strange", "target": "home" }
+      ]
+    },
+    {
+      "id": "ignore",
+      "text": "You toss the envelope into a drawer. Later that week you find a feather in the drawer that hums when you hold it. Perhaps you should have gone.\n\nTHE END — Curiosity Waits.",
+      "choices": []
+    },
+    {
+      "id": "call_owl",
+      "text": "The owl lands on your sill and tilts its head. It leaves a small map that shows three markers: the Arch, the Lantern, and the Clocktower.",
+      "choices": [
+        { "label": "Follow the map to the Lantern", "target": "lantern" },
+        { "label": "Follow the map to the Clocktower", "target": "clocktower" },
+        { "label": "Go to the Arch (the map's first marker)", "target": "arch" }
+      ]
+    },
+    {
+      "id": "arch",
+      "text": "You step into a room filled with floating books. A kind-looking professor offers two items: a quill that writes answers, and a compass that points to hidden doors.",
+      "choices": [
+        { "label": "Take the quill (instant wisdom)", "target": "quill" },
+        { "label": "Take the compass (secret paths)", "target": "compass" },
+        { "label": "Refuse both — learn the hard way", "target": "refuse" }
+      ]
+    },
+    {
+      "id": "watch_arch",
+      "text": "You watch the arch and see a parade of odd students pass through: some laughing, some whispering spells. One student stops and waves at you before vanishing. You feel invited.",
+      "choices": [
+        { "label": "Walk through after them", "target": "arch" },
+        { "label": "Walk home — this is silly", "target": "home" }
+      ]
+    },
+    {
+      "id": "lantern",
+      "text": "A brass lantern shows you not the path, but a memory: the moment you first believed in magic. Warmth fills you and you understand courage.",
+      "choices": [
+        { "label": "Use the lantern's courage to go to the Clocktower", "target": "clocktower" },
+        { "label": "Carry the lantern with you and explore the grounds", "target": "grounds" }
+      ]
+    },
+    {
+      "id": "clocktower",
+      "text": "At the top of the clocktower, a shimmering portal reveals three futures: Quiet Life, Legendary Spellcraft, or Wandless Wandering.",
+      "choices": [
+        { "label": "Choose Quiet Life (a peaceful home)", "target": "quiet_life" },
+        { "label": "Choose Legendary Spellcraft (fame & study)", "target": "legend" },
+        { "label": "Choose Wandless Wandering (adventure)", "target": "wander" }
+      ]
+    },
+    {
+      "id": "quill",
+      "text": "The quill writes truths you didn't know you needed. You sail through the first test night, answering riddles while the library applauds.\n\nYou are offered a place as an apprentice scribe.\n\nTHE END — A Scholar's Light.",
+      "choices": []
+    },
+    {
+      "id": "compass",
+      "text": "With the compass you discover a hidden door behind ivy. Beyond it: a garden of mirrors showing what you could be. One mirror shows you teaching a circle of eager students.",
+      "choices": [
+        { "label": "Step into the teaching mirror future", "target": "teacher" },
+        { "label": "Shatter the mirror and keep exploring", "target": "grounds" }
+      ]
+    },
+    {
+      "id": "refuse",
+      "text": "You decline both items and are led to a solitary room of challenges that test wit and heart. You pass with grit and earn the respect of the academy.\n\nTHE END — Earned, Not Gifted.",
+      "choices": []
+    },
+    {
+      "id": "home",
+      "text": "You go back to bed. In the morning, a note tucked under your door reads: \"Next year, perhaps.\" It smells faintly of moonlight.\n\nTHE END — Safe and Sound.",
+      "choices": []
+    },
+    {
+      "id": "grounds",
+      "text": "Exploring the grounds you meet a sprite who offers to show you a secret performance at midnight if you bring a song. You now know the way to music and mischief.",
+      "choices": [
+        { "label": "Learn a song and attend the performance", "target": "performance" },
+        { "label": "Politely decline and become the sprite's friend", "target": "sprite_friend" }
+      ]
+    },
+    {
+      "id": "quiet_life",
+      "text": "You choose a life of quiet charm: cozy cottage, late-night tea, a small garden where owls sometimes land. You keep a lantern on the windowsill.\n\nTHE END — Cozy & Content.",
+      "choices": []
+    },
+    {
+      "id": "legend",
+      "text": "You dive into study and your name becomes a whisper in great halls. New spells are attached to your initials, and students travel to see your lecture scrolls.\n\nTHE END — A Name in the Margins.",
+      "choices": []
+    },
+    {
+      "id": "wander",
+      "text": "No wand? No problem. You step through the portal and wander from academy to academy, helping in ways no spellbook could chart. Stories follow you like lantern light.\n\nTHE END — The Wandless Path.",
+      "choices": []
+    },
+    {
+      "id": "teacher",
+      "text": "Teaching suits you. Seasons pass in chalk dust and laughter. You craft new puzzles for bright minds and find joy in small discoveries.",
+      "choices": []
+    },
+    {
+      "id": "performance",
+      "text": "At midnight the performance is a small riot of music and light. You join in the chorus and the sprite gifts you a feather that never rustles — a token of belonging.\n\nTHE END — Songbound.",
+      "choices": []
+    },
+    {
+      "id": "sprite_friend",
+      "text": "The sprite and you exchange stories until dawn. You learn the secret of tiny kindnesses that change the world in small ways.\n\nTHE END — Friend of Sprites.",
+      "choices": []
+    }
+  ]
+}
